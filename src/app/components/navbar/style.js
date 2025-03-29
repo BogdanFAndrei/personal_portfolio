@@ -43,6 +43,7 @@ export const StyledLink = styled.a`
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s;
+    font-size: 1.4rem;
 
     &:hover {
         color: #007bff;
@@ -84,7 +85,7 @@ export const SocialIcons = styled.div`
 
     a {
         color: #333;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         transition: color 0.2s;
 
         &:hover {

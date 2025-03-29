@@ -1,5 +1,5 @@
-import './globals.css';
 import StyledComponentsRegistry from '../lib/registry';
+import ClientLayout from './components/ClientLayout';
 
 export const metadata = {
   title: 'Bogdan\'s Portfolio',
@@ -10,7 +10,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <ClientLayout>
+            {children}
+          </ClientLayout>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
