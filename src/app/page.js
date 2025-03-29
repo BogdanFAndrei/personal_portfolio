@@ -1,17 +1,36 @@
+'use client';
+
 import Image from "next/image";
-import styles from "./page.module.css";
 import NavBar from './components/navbar';
+import { Main, Section, Container, ProfileContainer, Title, Description, Email, EmailLink } from './styles/PageStyles';
+import { FaEnvelope } from 'react-icons/fa';
 
 export default function Home() {
   return (
-    <main className="pt-16">
+    <Main>
       <NavBar />
-      <section id="home" className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
-          <p className="text-xl">I'm a passionate developer creating amazing web experiences</p>
-        </div>
-      </section>
-    </main>
+      <Section id="home">
+        <Container>
+          <ProfileContainer>
+            <Image
+              src="/images/profilepic.jpg"
+              alt="Bogdan Andrei"
+              
+              width={200}
+              height={256}
+              style={{ objectFit: 'cover' , }}
+              priority
+            />
+          </ProfileContainer>
+          <EmailLink href="mailto:andrei.fbogdan@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Mail">
+            <Email>
+              <FaEnvelope />
+              andrei.fbogdan@gmail.com
+            </Email>
+          </EmailLink>
+          <Description>I'm a passionate developer creating amazing web experiences</Description>
+        </Container>
+      </Section>
+    </Main>
   );
 }
