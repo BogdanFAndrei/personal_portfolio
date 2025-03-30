@@ -44,7 +44,7 @@ export default function Home() {
                   priority
                 />
               </ProfileContainer>
-              <Title style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Bogdan Florin Andrei</Title>
+              <Title style={{ fontSize: '1.5rem', marginBottom: '-1rem' }}>Bogdan Florin Andrei</Title>
               <EmailLink href="mailto:andrei.fbogdan@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Mail">
                 <Email>
                   <FaEnvelope />
@@ -65,7 +65,7 @@ export default function Home() {
               <FaGithub />
               <ButtonText>
                 <ButtonTitle>Check out my repositories</ButtonTitle>
-                <ButtonStats>3000+ commits · 500+ stars</ButtonStats>
+                <ButtonStats>300+ commits</ButtonStats>
               </ButtonText>
             </SocialButton>
             <SocialButton href="https://www.linkedin.com/in/bogdan-florin-andrei-12496b24b/" target="_blank" rel="noopener noreferrer">
