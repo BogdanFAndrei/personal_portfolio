@@ -1,90 +1,82 @@
+/**
+ * Main page component for the portfolio website.
+ * This component serves as the landing page and includes:
+ * - Navigation bar
+ * - Profile picture with hover effect
+ * - Name display
+ * - Contact email
+ * - Social media links (GitHub, LinkedIn, Twitter)
+ * 
+ * @component
+ * @returns {JSX.Element} The rendered main page component
+ */
+
 'use client';
 
-import Image from "next/image";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { useState } from 'react';
+import styled from 'styled-components';
 import NavBar from './components/navbar';
-import {
-  Main,
-  Section,
-  Container,
-  ProfileSection,
-  ProfileContainer,
-  ProfileImageSection,
-  BioContainer,
-  BioText,
-  Title,
-  Description,
-  Email,
-  EmailLink,
-  ButtonsContainer,
-  SocialButton,
-  ButtonText,
-  ButtonTitle,
-  ButtonStats
-} from './styles/PageStyles';
+import { PageContainer, Section, SectionTitle, SectionContent } from './styles/PageStyles';
+import { ProfilePicture } from './styles/ProfilePicture';
+import { SocialButton } from './styles/SocialButton';
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
 export default function Home() {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <Main>
+    <PageContainer>
       <NavBar />
-      <Section id="home">
-        <Container>
-          <ProfileSection>
-            <ProfileImageSection>
-              <ProfileContainer>
-                <Image
-                  src="/images/profilepic.jpg"
-                  alt="Bogdan Andrei"
-                  width={256}
-                  height={256}
-                  style={{ 
-                    objectFit: 'cover',
-                    objectPosition: 'center 10%'
-                  }}
-                  priority
-                />
-              </ProfileContainer>
-              <Title style={{ fontSize: '1.5rem', marginBottom: '-1rem' }}>Bogdan Florin Andrei</Title>
-              <EmailLink href="mailto:andrei.fbogdan@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Mail">
-                <Email>
-                  <FaEnvelope />
-                  andrei.fbogdan@gmail.com
-                </Email>
-              </EmailLink>
-            </ProfileImageSection>
-            <BioContainer>
-              <Title>Welcome to My Portfolio</Title>
-              <Description>I'm a passionate developer creating amazing web experiences</Description>
-              <BioText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </BioText>
-            </BioContainer>
-          </ProfileSection>
-          <ButtonsContainer>
-            <SocialButton href="https://github.com/BogdanFAndrei" target="_blank" rel="noopener noreferrer">
-              <FaGithub />
-              <ButtonText>
-                <ButtonTitle>Check out my repositories</ButtonTitle>
-                <ButtonStats>300+ commits</ButtonStats>
-              </ButtonText>
+      <Section>
+        <SectionTitle>Welcome</SectionTitle>
+        <SectionContent>
+          <ProfilePicture
+            src="/profile.jpg"
+            alt="Bogdan Florin Andrei"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          />
+          <h1 style={{ 
+            fontSize: '2.5rem', 
+            marginBottom: '1rem',
+            textAlign: 'center',
+            color: '#333'
+          }}>
+            Bogdan Florin Andrei
+          </h1>
+          <SocialButton
+            href="mailto:bogdanfandrei@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ marginBottom: '1rem' }}
+          >
+            <FaEnvelope /> bogdanfandrei@gmail.com
+          </SocialButton>
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+            <SocialButton
+              href="https://github.com/BogdanFAndrei"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub /> GitHub
             </SocialButton>
-            <SocialButton href="https://www.linkedin.com/in/bogdan-florin-andrei-12496b24b/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin />
-              <ButtonText>
-                <ButtonTitle>Connect with me</ButtonTitle>
-                <ButtonStats>LinkedIn Profile</ButtonStats>
-              </ButtonText>
+            <SocialButton
+              href="https://www.linkedin.com/in/bogdan-florin-andrei-12496b24b/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin /> LinkedIn
             </SocialButton>
-            <SocialButton href="https://x.com/BogdanFAndrei" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
-              <ButtonText>
-                <ButtonTitle>Follow me</ButtonTitle>
-                <ButtonStats>Twitter/X Profile</ButtonStats>
-              </ButtonText>
+            <SocialButton
+              href="https://twitter.com/bogdanfandrei"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter /> Twitter
             </SocialButton>
-          </ButtonsContainer>
-        </Container>
+          </div>
+        </SectionContent>
       </Section>
-    </Main>
+    </PageContainer>
   );
 }
