@@ -1,3 +1,15 @@
+/**
+ * Global styles for the portfolio website.
+ * This file contains the base styles that apply to the entire application:
+ * - Reset default browser styles
+ * - Set base font family and size
+ * - Define color variables
+ * - Set default margins and padding
+ * - Apply smooth scrolling behavior
+ * 
+ * These styles ensure consistent typography and spacing across all components.
+ */
+
 'use client';
 
 import { createGlobalStyle } from 'styled-components';
@@ -9,6 +21,10 @@ const GlobalStyles = createGlobalStyle`
     --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
       'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
       'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #333;
   }
 
   * {
@@ -25,13 +41,28 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    color: #333;
-    background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--background-color);
   }
 
   a {
-    color: inherit;
+    color: var(--primary-color);
     text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: darken(var(--primary-color), 10%);
+    }
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
   }
 
   .min-h-screen {
