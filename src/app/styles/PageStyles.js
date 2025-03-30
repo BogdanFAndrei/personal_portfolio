@@ -1,21 +1,48 @@
+/**
+ * Global page styles and layout components.
+ * This file contains styled components for the main layout structure:
+ * - PageContainer: Main wrapper for all page content
+ * - Section: Container for individual page sections
+ * - SectionTitle: Styled heading for section titles
+ * - SectionContent: Container for section content
+ * 
+ * These components provide consistent spacing, layout, and styling across the portfolio.
+ */
+
 'use client';
 
 import styled from 'styled-components';
+
+export const PageContainer = styled.main`
+  min-height: 100vh;
+  background-color: #f8f9fa;
+`;
+
+export const Section = styled.section`
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+`;
+
+export const SectionTitle = styled.h2`
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+`;
+
+export const SectionContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+`;
 
 export const Main = styled.main`
   display: flex;
   flex-direction: column;
   padding-top: 4rem;
   min-height: 100vh;
-`;
-
-export const Section = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  min-height: 100vh;
-  padding: 2rem;
 `;
 
 export const Container = styled.div`
@@ -152,12 +179,3 @@ export const ButtonText = styled.div`
 `;
 
 export const ButtonTitle = styled.span`
-  font-weight: 500;
-  font-size: 1.125rem;
-`;
-
-export const ButtonStats = styled.span`
-  font-size: 1rem;
-  color: #007bff;
-  margin-top: 0.25rem;
-`; 
