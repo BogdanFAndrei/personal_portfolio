@@ -1,3 +1,17 @@
+/**
+ * Navigation bar component for the portfolio website.
+ * This component provides navigation links to different sections of the portfolio:
+ * - Home
+ * - About
+ * - Projects
+ * - Contact
+ * 
+ * The navbar is responsive and includes a mobile menu for smaller screens.
+ * 
+ * @component
+ * @returns {JSX.Element} The rendered navigation bar component
+ */
+
 'use client'
 import React, { useState } from 'react'
 import Link from 'next/link'
@@ -15,7 +29,7 @@ import {
 
 const navbarItems = [
     { name: 'Home', href: '#home' },
-    { name: 'Experience', href: '#experience' },
+    { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
 ]
@@ -25,7 +39,6 @@ const Navbar = ({ hasBorder = true, longBorder = false }) => {
 
     return (
         <StyledNavContainer $hasBorder={hasBorder} $longBorder={longBorder}>
-          
             <Link href='/' title='Home'>
                 <StyledText>Bogdan</StyledText>
             </Link>
