@@ -1,3 +1,16 @@
+/**
+ * Styled components for the navigation bar.
+ * This file contains all the styled components used in the navbar:
+ * - Nav: Main navigation container
+ * - NavContainer: Inner container for navbar content
+ * - Logo: Brand/logo text
+ * - NavLinks: Container for navigation links
+ * - NavLink: Individual navigation link
+ * - MobileIcon: Mobile menu toggle button
+ * 
+ * The styles include responsive design for both desktop and mobile views.
+ */
+
 import styled from 'styled-components'
 
 export const StyledNavContainer = styled.nav`
