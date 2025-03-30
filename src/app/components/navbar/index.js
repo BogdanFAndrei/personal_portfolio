@@ -15,7 +15,7 @@ import {
 
 const navbarItems = [
     { name: 'Home', href: '#home' },
-    { name: 'Skills', href: '#skills' },
+    { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
 ]
@@ -25,6 +25,7 @@ const Navbar = ({ hasBorder = true, longBorder = false }) => {
 
     return (
         <StyledNavContainer $hasBorder={hasBorder} $longBorder={longBorder}>
+          
             <Link href='/' title='Home'>
                 <StyledText>Bogdan</StyledText>
             </Link>
