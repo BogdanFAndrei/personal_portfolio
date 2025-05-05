@@ -28,10 +28,10 @@ import {
 } from './style'
 
 const navbarItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/', isPage: true },
+    { name: 'Skills', href: '#skills', isPage: false },
+    { name: 'Projects', href: '/projects', isPage: true },
+    { name: 'Contact', href: '#contact', isPage: false },
 ]
 
 const Navbar = ({ hasBorder = true, longBorder = false }) => {
@@ -45,12 +45,21 @@ const Navbar = ({ hasBorder = true, longBorder = false }) => {
             <StyledNav>
                 <StyledNavItems $showNavbar={showNavbar}>
                     {navbarItems.map((item, index) => (
-                        <StyledLink
-                            key={index}
-                            href={item.href}
-                        >
-                            {item.name}
-                        </StyledLink>
+                        item.isPage ? (
+                            <Link key={index} href={item.href} passHref legacyBehavior>
+                                <StyledLink onClick={() => setShowNavbar(false)}>
+                                    {item.name}
+                                </StyledLink>
+                            </Link>
+                        ) : (
+                            <StyledLink
+                                key={index}
+                                href={item.href}
+                                onClick={() => setShowNavbar(false)}
+                            >
+                                {item.name}
+                            </StyledLink>
+                        )
                     ))}
                     <SocialIcons>
                         <a href="https://github.com/BogdanFAndrei" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
