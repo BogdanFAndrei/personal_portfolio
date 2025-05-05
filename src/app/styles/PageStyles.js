@@ -179,3 +179,12 @@ export const ButtonText = styled.div`
 `;
 
 export const ButtonTitle = styled.span`
+  font-weight: 500;
+  font-size: 1.125rem;
+`;
+
+export const ButtonStats = styled.span`
+  font-size: 1rem;
+  color: #007bff;
+  margin-top: 0.25rem;
+`;
