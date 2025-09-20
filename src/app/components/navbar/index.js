@@ -64,7 +64,6 @@ const Navbar = ({ hasBorder = true, longBorder = false }) => {
                     <SocialIcons>
                         <a href="https://github.com/BogdanFAndrei" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
                         <a href="https://www.linkedin.com/in/bogdan-florin-andrei-12496b24b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
-                        <a href="https://instagram.com/bogdanfandrei" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
                     </SocialIcons>
                 </StyledNavItems>
                 <StyledNavButton
