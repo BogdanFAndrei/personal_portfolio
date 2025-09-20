@@ -22,7 +22,7 @@ export const projectsData = [
     description: 'This e-commerce platform provides a complete shopping experience with product browsing, cart functionality, user authentication, and payment processing. The frontend is built with React and Redux for state management, while the backend uses Node.js with Express and MongoDB. Features include product search and filtering, reviews, and an admin dashboard for managing products and orders.',
     technologies: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'Stripe', 'AWS S3'],
     githubUrl: 'https://github.com/BogdanFAndrei/ecommerce-platform',
-    liveUrl: 'https://ecommerce-demo.bogdanfandrei.com',
+    liveUrl: 'https://www.heba.care/',
     gallery: [
       '/projects/ecommerce-1.jpg',
       '/projects/ecommerce-2.jpg',
