@@ -18,12 +18,12 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 const ProjectCard = ({ project, onClick }) => {
   return (
     <Card>
-      <ImageContainer>
+      <ImageContainer $bg={project.cardBg}>
         <Image 
           src={project.image} 
           alt={project.title}
           fill
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: 'contain' }}
         />
       </ImageContainer>
       <Content>
@@ -68,6 +68,8 @@ const ImageContainer = styled.div`
   position: relative;
   width: 100%;
   height: 200px;
+  background: ${({ $bg }) =>
+    $bg ? `center / cover no-repeat url(${$bg})` : '#f3f4f6'};
 `;
 
 const Content = styled.div`
