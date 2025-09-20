@@ -16,19 +16,19 @@ export const projectsData = [
 
   {
     id: 0,
-    title: 'HEBA.care',
-    image: '/projects/heba-logo-formerly.png',
-    shortDescription: 'NHS-approved React Native app for managing children s complex healthcare needs. Tracks symptoms, medications, and appointments with secure family and healthcare team collaboration',
-    description: `Software Quality Assurance & Testing | React Native, JIRA, TestFlight\n\nLed comprehensive software testing for an NHS-approved React Native mobile application designed for families managing children with complex healthcare needs. Collaborated with Cambridge alumni development team to ensure platform quality, user experience, and regulatory compliance for sensitive pediatric healthcare data management.\n\nKey Technical Achievements:\n\n- Created extensive user flow documentation and flowcharts to optimize application navigation and feature accessibility for families under stress\n- Coordinated TestFlight beta testing programs, managing multiple release cycles and gathering critical user feedback from healthcare professionals and families\n- Developed systematic test reporting protocols covering functionality, usability, and accessibility across iOS platforms\n- Implemented structured bug tracking and resolution workflows using JIRA, ensuring efficient communication between QA and development teams\n- Established quality assurance standards for healthcare data privacy, medication tracking accuracy, and multi-user collaboration features\n- Conducted cross-platform compatibility testing for symptom tracking, appointment management, and secure document sharing functionalities\n\nImpact: Contributed to delivering a life-changing platform that consolidates multiple healthcare management tools into one secure application, earning overwhelming positive feedback from families managing complex pediatric care while meeting strict NHS approval standards for healthcare applications.`,ion: 'This e-commerce platform provides a complete shopping experience with product browsing, cart functionality, user authentication, and payment processing. The frontend is built with React and Redux for state management, while the backend uses Node.js with Express and MongoDB. Features include product search and filtering, reviews, and an admin dashboard for managing products and orders.',
-    technologies: ["React Native",  "Java Script", 'TestFlight (iOS)', 'JIRA (Bug Tracking)'],
-    liveUrl: 'https://www.heba.care/',
-    headerBg: '#428755',
+    title: 'Boost AI',
+    image: '/projects/logoPurple.png',
+    shortDescription: 'AI-powered math learning platform where students photograph problems to receive step-by-step solutions and personalized guidance. Trained on Oxford University materials to provide accurate tutoring in students pockets with teacher progress tracking capabilities.',
+    description: `Full-Stack Development & Quality Assurance | Swift, React Native, React, Python\n\nJoined the team during Swift-based iPad-only deployment phase, conducting comprehensive testing and bug resolution for the existing iOS application. Led cross-platform migration from Swift to React Native enabling both Android and iOS deployment, while redesigning the teacher web console and implementing new progress tracking capabilities.\n\nKey Technical Achievements:\n\n- Conducted extensive testing and debugging of Swift-based iPad application, creating detailed test reports and bug documentation\n- Collaborated with lead developer on Swift-to-React Native migration, enabling cross-platform deployment for both Android and iOS\n- Redesigned teacher web console interface using React with enhanced user experience and new progress tracking features\n- Developed comprehensive API testing protocols and load testing frameworks to ensure platform reliability\n- Created Python automation scripts for AI model accuracy testing, benchmarking performance against industry-standard models (Claude Sonnet 4, Google Gemini 2.5 Pro, GPT-4o Mini)\n- Worked closely with backend and frontend development teams to ensure seamless integration across mobile and web platforms\n- Implemented systematic quality assurance processes covering functionality, performance, and user experience testing\n\nImpact: Successfully transitioned the platform from single-platform to cross-platform deployment, significantly expanding market reach while maintaining educational quality and platform reliability through rigorous testing methodologies and AI model optimization.`,    technologies: ['JavaScript', 'React', 'OpenWeatherMap API', 'Mapbox API', 'Chart.js', 'CSS3'],
+    githubUrl: 'https://github.com/BogdanFAndrei/weather-dashboard',
+    liveUrl: 'https://weather.bogdanfandrei.com',
+    technologies: ['Swift', 'React Native', 'TypeScript', 'React', 'Python', 'Postman', 'Trello', 'GitHub'],
     gallery: [
-      '/projects/hibi_track.png',
-      '/projects/hibi_trends.png',
-      '/projects/hibi_collaboration.png',
-      '/projects/hibi_expert.png',
-
+      '/projects/boost1.jpeg',
+      '/projects/questionView.jpeg',
+      '/projects/MainView.jpeg',
+      '/projects/boost2.png',
+      '/projects/boost3.png',
     ]
   },
   {
@@ -51,21 +51,22 @@ export const projectsData = [
      
     ]
   },
+ 
   {
     id: 2,
-    title: 'Boost AI',
-    image: '/projects/logoPurple.png',
-    shortDescription: 'AI-powered math learning platform where students photograph problems to receive step-by-step solutions and personalized guidance. Trained on Oxford University materials to provide accurate tutoring in students pockets with teacher progress tracking capabilities.',
-    description: `Full-Stack Development & Quality Assurance | Swift, React Native, React, Python\n\nJoined the team during Swift-based iPad-only deployment phase, conducting comprehensive testing and bug resolution for the existing iOS application. Led cross-platform migration from Swift to React Native enabling both Android and iOS deployment, while redesigning the teacher web console and implementing new progress tracking capabilities.\n\nKey Technical Achievements:\n\n- Conducted extensive testing and debugging of Swift-based iPad application, creating detailed test reports and bug documentation\n- Collaborated with lead developer on Swift-to-React Native migration, enabling cross-platform deployment for both Android and iOS\n- Redesigned teacher web console interface using React with enhanced user experience and new progress tracking features\n- Developed comprehensive API testing protocols and load testing frameworks to ensure platform reliability\n- Created Python automation scripts for AI model accuracy testing, benchmarking performance against industry-standard models (Claude Sonnet 4, Google Gemini 2.5 Pro, GPT-4o Mini)\n- Worked closely with backend and frontend development teams to ensure seamless integration across mobile and web platforms\n- Implemented systematic quality assurance processes covering functionality, performance, and user experience testing\n\nImpact: Successfully transitioned the platform from single-platform to cross-platform deployment, significantly expanding market reach while maintaining educational quality and platform reliability through rigorous testing methodologies and AI model optimization.`,    technologies: ['JavaScript', 'React', 'OpenWeatherMap API', 'Mapbox API', 'Chart.js', 'CSS3'],
-    githubUrl: 'https://github.com/BogdanFAndrei/weather-dashboard',
-    liveUrl: 'https://weather.bogdanfandrei.com',
-    technologies: ['Swift', 'React Native', 'TypeScript', 'React', 'Python', 'Postman', 'Trello', 'GitHub'],
+    title: 'HEBA.care',
+    image: '/projects/heba-logo-formerly.png',
+    shortDescription: 'NHS-approved React Native app for managing children s complex healthcare needs. Tracks symptoms, medications, and appointments with secure family and healthcare team collaboration',
+    description: `Software Quality Assurance & Testing | React Native, JIRA, TestFlight\n\nLed comprehensive software testing for an NHS-approved React Native mobile application designed for families managing children with complex healthcare needs. Collaborated with Cambridge alumni development team to ensure platform quality, user experience, and regulatory compliance for sensitive pediatric healthcare data management.\n\nKey Technical Achievements:\n\n- Created extensive user flow documentation and flowcharts to optimize application navigation and feature accessibility for families under stress\n- Coordinated TestFlight beta testing programs, managing multiple release cycles and gathering critical user feedback from healthcare professionals and families\n- Developed systematic test reporting protocols covering functionality, usability, and accessibility across iOS platforms\n- Implemented structured bug tracking and resolution workflows using JIRA, ensuring efficient communication between QA and development teams\n- Established quality assurance standards for healthcare data privacy, medication tracking accuracy, and multi-user collaboration features\n- Conducted cross-platform compatibility testing for symptom tracking, appointment management, and secure document sharing functionalities\n\nImpact: Contributed to delivering a life-changing platform that consolidates multiple healthcare management tools into one secure application, earning overwhelming positive feedback from families managing complex pediatric care while meeting strict NHS approval standards for healthcare applications.`,ion: 'This e-commerce platform provides a complete shopping experience with product browsing, cart functionality, user authentication, and payment processing. The frontend is built with React and Redux for state management, while the backend uses Node.js with Express and MongoDB. Features include product search and filtering, reviews, and an admin dashboard for managing products and orders.',
+    technologies: ["React Native",  "Java Script", 'TestFlight (iOS)', 'JIRA (Bug Tracking)'],
+    liveUrl: 'https://www.heba.care/',
+    headerBg: '#428755',
     gallery: [
-      '/projects/boost1.jpeg',
-      '/projects/questionView.jpeg',
-      '/projects/MainView.jpeg',
-      '/projects/boost2.png',
-      '/projects/boost3.png',
+      '/projects/hibi_track.png',
+      '/projects/hibi_trends.png',
+      '/projects/hibi_collaboration.png',
+      '/projects/hibi_expert.png',
+
     ]
   },
   {
@@ -83,6 +84,7 @@ export const projectsData = [
       '/projects/taskapp-3.jpg',
     ]
   },
+  
   {
     id: 4,
     title: 'ScoutBot_AI',
