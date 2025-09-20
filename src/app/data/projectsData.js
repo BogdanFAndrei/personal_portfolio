@@ -38,7 +38,7 @@ export const projectsData = [
     bannerColor: '#730194',
     headerBg: '#a416cd',
     headerTextColor: '#111827',
-    shortDescription: 'Voice AI receptionist built with Next.js + React, Node.js, Supabase, and ElevenLabs.',
+    shortDescription: 'AI-powered voice receptionist platform for healthcare providers enabling 24/7 automated patient communication, appointment scheduling, and intelligent call routing. Provide continuous professional reception services for medical practices.',
     description: `Full-Stack AI Voice Assistant Development | Node.js, React, Next.js\n\nDeveloped a comprehensive AI-powered receptionist platform specifically designed for healthcare providers, enabling 24/7 automated patient communication and appointment management. Built a multilingual voice AI system that handles appointment scheduling, call routing, and patient inquiries with HIPAA-compliant data handling.\n\nKey Technical Achievements:\n\n- Engineered serverless backend infrastructure using Node.js on Supabase with Google Calendar API integration for real-time appointment management (scheduling, modification, and availability checking)\n- Implemented advanced prompt engineering and integrated ElevenLabs TTS for natural voice interactions\n- Configured Netgsm SIP trunk integration for seamless telephony operations in the Turkish market\n- Developed responsive web platform using Next.js and React with multi-language support and interactive demo capabilities\n- Created automated call routing system with intelligent departmental forwarding based on patient needs\n- Built comprehensive analytics dashboard for call tracking and customer interaction reporting\n\nImpact: Revolutionized patient communication for healthcare providers by eliminating missed calls and providing continuous, professional-grade automated reception services, targeting emerging healthcare markets with scalable AI voice infrastructure.\n\nThis description highlights both the technical complexity and business impact of the project while being concise enough for a resume format.`,
     technologies: ['Next.js', 'React', 'Node.js', 'Supabase', 'ElevenLabs', 'Voice AI', 'TypeScript'],
     githubUrl: null,
@@ -54,15 +54,18 @@ export const projectsData = [
   {
     id: 2,
     title: 'Boost AI',
-    image: '/projects/weather.jpg',
-    shortDescription: 'A weather app featuring current conditions and forecasts.',
-    description: 'This weather dashboard application displays current weather conditions and forecasts for any location worldwide. It uses the OpenWeatherMap API for weather data and the Mapbox API for location search. The app includes features like saving favorite locations, viewing historical weather data, and receiving weather alerts. The interface is responsive and adapts to different screen sizes for a seamless experience on any device.',
-    technologies: ['JavaScript', 'React', 'OpenWeatherMap API', 'Mapbox API', 'Chart.js', 'CSS3'],
+    image: '/projects/logoPurple.png',
+    shortDescription: 'AI-powered math learning platform where students photograph problems to receive step-by-step solutions and personalized guidance. Trained on Oxford University materials to provide accurate tutoring in students pockets with teacher progress tracking capabilities.',
+    description: `Full-Stack Development & Quality Assurance | Swift, React Native, React, Python\n\nJoined the team during Swift-based iPad-only deployment phase, conducting comprehensive testing and bug resolution for the existing iOS application. Led cross-platform migration from Swift to React Native enabling both Android and iOS deployment, while redesigning the teacher web console and implementing new progress tracking capabilities.\n\nKey Technical Achievements:\n\n- Conducted extensive testing and debugging of Swift-based iPad application, creating detailed test reports and bug documentation\n- Collaborated with lead developer on Swift-to-React Native migration, enabling cross-platform deployment for both Android and iOS\n- Redesigned teacher web console interface using React with enhanced user experience and new progress tracking features\n- Developed comprehensive API testing protocols and load testing frameworks to ensure platform reliability\n- Created Python automation scripts for AI model accuracy testing, benchmarking performance against industry-standard models (Claude Sonnet 4, Google Gemini 2.5 Pro, GPT-4o Mini)\n- Worked closely with backend and frontend development teams to ensure seamless integration across mobile and web platforms\n- Implemented systematic quality assurance processes covering functionality, performance, and user experience testing\n\nImpact: Successfully transitioned the platform from single-platform to cross-platform deployment, significantly expanding market reach while maintaining educational quality and platform reliability through rigorous testing methodologies and AI model optimization.`,    technologies: ['JavaScript', 'React', 'OpenWeatherMap API', 'Mapbox API', 'Chart.js', 'CSS3'],
     githubUrl: 'https://github.com/BogdanFAndrei/weather-dashboard',
     liveUrl: 'https://weather.bogdanfandrei.com',
+    technologies: ['Swift', 'React Native', 'TypeScript', 'React', 'Python', 'Postman', 'Trello', 'GitHub'],
     gallery: [
-      '/projects/weather-1.jpg',
-      '/projects/weather-2.jpg',
+      '/projects/boost1.jpeg',
+      '/projects/questionView.jpeg',
+      '/projects/MainView.jpeg',
+      '/projects/boost2.png',
+      '/projects/boost3.png',
     ]
   },
   {

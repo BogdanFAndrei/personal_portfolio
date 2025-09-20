@@ -30,7 +30,7 @@ export default function Projects() {
   return (
     <PageContainer>
       <NavBar />
-      <Section>
+      <ProjectsSection>
         <SectionTitle>Projects</SectionTitle>
         <ProjectsGrid>
           {projectsData.map((project) => (
@@ -47,7 +47,7 @@ export default function Projects() {
             onClose={closeModal} 
           />
         )}
-      </Section>
+      </ProjectsSection>
     </PageContainer>
   );
 }
@@ -63,3 +63,7 @@ const ProjectsGrid = styled.div`
     grid-template-columns: 1fr;
   }
 `; 
+
+const ProjectsSection = styled(Section)`
+  padding-top: 6rem;
+`;
