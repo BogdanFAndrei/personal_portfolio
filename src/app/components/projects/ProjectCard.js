@@ -13,10 +13,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const ProjectCard = ({ project, onClick }) => {
   return (
-    <Card onClick={onClick}>
+    <Card>
       <ImageContainer>
         <Image 
           src={project.image} 
@@ -28,7 +29,19 @@ const ProjectCard = ({ project, onClick }) => {
       <Content>
         <Title>{project.title}</Title>
         <Description>{project.shortDescription}</Description>
-        <ViewButton>View Details</ViewButton>
+        <ActionsRow>
+          <ActionButton onClick={onClick}>View Details</ActionButton>
+          {project.liveUrl && (
+            <ActionLink
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <FaExternalLinkAlt /> Live Demo
+            </ActionLink>
+          )}
+        </ActionsRow>
       </Content>
     </Card>
   );
@@ -77,19 +90,33 @@ const Description = styled.p`
   flex-grow: 1;
 `;
 
-const ViewButton = styled.button`
+const ActionsRow = styled.div`
+  display: flex;
+  gap: 0.75rem;
+`;
+
+const actionStyles = `
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
   background-color: #007bff;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
+  color: #fff;
+  border-radius: 8px;
   font-weight: 500;
   border: none;
+  text-decoration: none;
   transition: background-color 0.2s ease;
-  align-self: flex-start;
-  
-  &:hover {
-    background-color: #0056b3;
-  }
+  cursor: pointer;
+  &:hover { background-color: #0056b3; }
+`;
+
+const ActionButton = styled.button`
+  ${actionStyles}
+`;
+
+const ActionLink = styled.a`
+  ${actionStyles}
 `;
 
 export default ProjectCard; 

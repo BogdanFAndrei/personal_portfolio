@@ -17,6 +17,7 @@ export const ProfilePicture = styled.img`
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: 50% calc(50% - 20px);
   border: 4px solid #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;

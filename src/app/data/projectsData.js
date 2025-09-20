@@ -13,24 +13,10 @@
  */
 
 export const projectsData = [
+
   {
     id: 0,
-    title: 'AI Receptionist (Sopranos AI Placeholder)',
-    image: 'https://via.placeholder.com/800x600/111827/ffffff?text=AI+Receptionist',
-    shortDescription: 'Voice AI receptionist placeholder built with Next.js + React, Node.js tools, Supabase, and ElevenLabs.',
-    description: 'A placeholder website showcasing an AI receptionist concept inspired by Sopranos AI. It provides 24/7 voice assistant capabilities including smart call handling, appointment scheduling, call routing, analytics, and HIPAA-aware workflows. I integrated tool execution with Node.js services backed by Supabase, and connected ElevenLabs for natural voice. The frontend is implemented with React and Next.js, focusing on clean UI and responsive UX.',
-    technologies: ['Next.js', 'React', 'Node.js', 'Supabase', 'ElevenLabs', 'Voice AI', 'TypeScript'],
-    githubUrl: null,
-    liveUrl: 'https://www.sopranos.ai',
-    gallery: [
-      'https://via.placeholder.com/800x600/111827/ffffff?text=Call+Handling',
-      'https://via.placeholder.com/800x600/1f2937/ffffff?text=Appointment+Scheduling',
-      'https://via.placeholder.com/800x600/374151/ffffff?text=Analytics',
-    ]
-  },
-  {
-    id: 1,
-    title: 'E-Commerce Platform',
+    title: 'HEBA',
     image: '/projects/ecommerce.jpg',
     shortDescription: 'A full-stack e-commerce platform with React and Node.js.',
     description: 'This e-commerce platform provides a complete shopping experience with product browsing, cart functionality, user authentication, and payment processing. The frontend is built with React and Redux for state management, while the backend uses Node.js with Express and MongoDB. Features include product search and filtering, reviews, and an admin dashboard for managing products and orders.',
@@ -44,8 +30,28 @@ export const projectsData = [
     ]
   },
   {
+    id: 1,
+    title: 'Sopranos AI',
+    image: '/projects/Sopranos.png',
+    bannerColor: '#730194',
+    headerBg: '#a416cd',
+    headerTextColor: '#111827',
+    shortDescription: 'Voice AI receptionist built with Next.js + React, Node.js, Supabase, and ElevenLabs.',
+    description: `Full-Stack AI Voice Assistant Development | Node.js, React, Next.js\n\nDeveloped a comprehensive AI-powered receptionist platform specifically designed for healthcare providers, enabling 24/7 automated patient communication and appointment management. Built a multilingual voice AI system that handles appointment scheduling, call routing, and patient inquiries with HIPAA-compliant data handling.\n\nKey Technical Achievements:\n\n- Engineered serverless backend infrastructure using Node.js on Supabase with Google Calendar API integration for real-time appointment management (scheduling, modification, and availability checking)\n- Implemented advanced prompt engineering and integrated ElevenLabs TTS for natural voice interactions\n- Configured Netgsm SIP trunk integration for seamless telephony operations in the Turkish market\n- Developed responsive web platform using Next.js and React with multi-language support and interactive demo capabilities\n- Created automated call routing system with intelligent departmental forwarding based on patient needs\n- Built comprehensive analytics dashboard for call tracking and customer interaction reporting\n\nImpact: Revolutionized patient communication for healthcare providers by eliminating missed calls and providing continuous, professional-grade automated reception services, targeting emerging healthcare markets with scalable AI voice infrastructure.\n\nThis description highlights both the technical complexity and business impact of the project while being concise enough for a resume format.`,
+    technologies: ['Next.js', 'React', 'Node.js', 'Supabase', 'ElevenLabs', 'Voice AI', 'TypeScript'],
+    githubUrl: null,
+    liveUrl: 'https://www.sopranos.ai',
+    gallery: [
+      '/projects/Sopranos4.png',
+      '/projects/Sopranos2.png',
+      '/projects/Sopranos3.png',
+      
+     
+    ]
+  },
+  {
     id: 2,
-    title: 'Weather Dashboard',
+    title: 'Boost AI',
     image: '/projects/weather.jpg',
     shortDescription: 'A weather app featuring current conditions and forecasts.',
     description: 'This weather dashboard application displays current weather conditions and forecasts for any location worldwide. It uses the OpenWeatherMap API for weather data and the Mapbox API for location search. The app includes features like saving favorite locations, viewing historical weather data, and receiving weather alerts. The interface is responsive and adapts to different screen sizes for a seamless experience on any device.',
@@ -59,7 +65,7 @@ export const projectsData = [
   },
   {
     id: 3,
-    title: 'Task Management App',
+    title: 'Email Enhancer Agent',
     image: '/projects/taskapp.jpg',
     shortDescription: 'A Kanban-style task management application.',
     description: 'This task management application helps users organize their work with a Kanban-style board. Users can create tasks, assign them to team members, set due dates, and track progress through different stages. The app includes features like task filtering, search, priority levels, and notifications for approaching deadlines. It synchronizes data across devices and allows for offline use with background syncing when reconnected.',
@@ -74,7 +80,7 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: 'Fitness Tracker',
+    title: 'ScoutBot_AI',
     image: '/projects/fitness.jpg',
     shortDescription: 'A mobile-first fitness tracking application.',
     description: 'This fitness tracking application helps users monitor their workouts, nutrition, and progress toward health goals. It includes features for creating custom workout routines, logging exercises, tracking calories and macronutrients, and visualizing progress over time with interactive charts. The app integrates with health devices via Bluetooth for automatic data collection and provides AI-powered recommendations for workout and diet optimization.',
@@ -88,7 +94,7 @@ export const projectsData = [
   },
   {
     id: 5,
-    title: 'Portfolio Website',
+    title: 'aMazeing Dissertation',
     image: '/projects/portfolio.jpg',
     shortDescription: 'Personal portfolio website showcasing my projects and skills.',
     description: 'This portfolio website showcases my projects, skills, and experience as a developer. Built with Next.js and styled-components, it features a responsive design, interactive UI elements, and optimized performance. The site includes project showcases with detailed information, a skills section, contact form, and blog. It\'s designed to highlight my work and provide an easy way for potential clients or employers to get in touch.',

@@ -29,7 +29,7 @@ import {
 
 const navbarItems = [
     { name: 'Home', href: '/', isPage: true },
-    { name: 'Skills', href: '#skills', isPage: false },
+    { name: 'Achievements', href: '#Achievements', isPage: false },
     { name: 'Projects', href: '/projects', isPage: true },
     { name: 'Contact', href: '#contact', isPage: false },
 ]

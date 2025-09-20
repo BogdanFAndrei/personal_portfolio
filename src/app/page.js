@@ -29,7 +29,7 @@ export default function Home() {
         <HeroGrid>
           <LeftCol>
             <ProfilePicture
-              src="/profile.jpg"
+              src="/images/profilepic.png"
               alt="Bogdan Florin Andrei"
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
