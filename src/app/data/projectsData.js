@@ -14,6 +14,21 @@
 
 export const projectsData = [
   {
+    id: 0,
+    title: 'AI Receptionist (Sopranos AI Placeholder)',
+    image: 'https://via.placeholder.com/800x600/111827/ffffff?text=AI+Receptionist',
+    shortDescription: 'Voice AI receptionist placeholder built with Next.js + React, Node.js tools, Supabase, and ElevenLabs.',
+    description: 'A placeholder website showcasing an AI receptionist concept inspired by Sopranos AI. It provides 24/7 voice assistant capabilities including smart call handling, appointment scheduling, call routing, analytics, and HIPAA-aware workflows. I integrated tool execution with Node.js services backed by Supabase, and connected ElevenLabs for natural voice. The frontend is implemented with React and Next.js, focusing on clean UI and responsive UX.',
+    technologies: ['Next.js', 'React', 'Node.js', 'Supabase', 'ElevenLabs', 'Voice AI', 'TypeScript'],
+    githubUrl: null,
+    liveUrl: 'https://www.sopranos.ai',
+    gallery: [
+      'https://via.placeholder.com/800x600/111827/ffffff?text=Call+Handling',
+      'https://via.placeholder.com/800x600/1f2937/ffffff?text=Appointment+Scheduling',
+      'https://via.placeholder.com/800x600/374151/ffffff?text=Analytics',
+    ]
+  },
+  {
     id: 1,
     title: 'E-Commerce Platform',
     image: '/projects/ecommerce.jpg',
