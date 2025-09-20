@@ -38,23 +38,25 @@ export default function Home() {
           </LeftCol>
           <RightCol>
             <Eyebrow>Welcome</Eyebrow>
-            <HeroTitle>Bogdan Florin Andrei</HeroTitle>
-            <Subtitle>Frontend Developer • Next.js • React • UI/UX</Subtitle>
+            <HeroTitle>Bogdan Andrei</HeroTitle>
+            <Subtitle>Software Tester • Frontend Developer • Junior AI Engineer </Subtitle>
             <Bio>
-              I build fast, accessible, and elegant web experiences with modern
-              tooling. I care about clean design, performance, and delightful
-              interactions.
+              I ensure product quality as a Software Tester through clear test plans,
+              exploratory testing, and lightweight automation. I craft accessible,
+              performant interfaces as a Frontend Developer using React/Next.js.
+              As a Junior AI Engineer, I prototype LLM/ML features and integrate
+              them to deliver smarter user experiences.
             </Bio>
             <Actions>
               <SocialButton
-                href="mailto:bogdanfandrei@gmail.com"
+                href="mailto:andrei.fbogdan@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ backgroundColor: '#0d6efd', color: '#fff' }}
               >
                 <FaEnvelope /> Contact me
               </SocialButton>
-              <SmallNote>bogdanfandrei@gmail.com</SmallNote>
+              <SmallNote>andrei.fbogdan@gmail.com</SmallNote>
             </Actions>
             <SocialRow>
               <SocialButton
