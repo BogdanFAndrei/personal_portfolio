@@ -44,7 +44,7 @@ export default function Home() {
               I ensure product quality as a Software Tester through clear test plans,
               exploratory testing, and lightweight automation. I craft accessible,
               performant interfaces as a Frontend Developer using React/Next.js.
-              As a Junior AI Engineer, I prototype LLM/ML features and integrate
+              As a Junior AI Engineer, I prototype LLM features and integrate
               them to deliver smarter user experiences.
             </Bio>
             <Actions>
